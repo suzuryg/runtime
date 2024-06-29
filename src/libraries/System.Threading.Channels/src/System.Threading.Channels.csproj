@@ -1,12 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(NetCoreAppCurrent);$(NetCoreAppPrevious);$(NetCoreAppMinimum);netstandard2.1;netstandard2.0;$(NetFrameworkMinimum)</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netstandard2.0;$(NetFrameworkMinimum)</TargetFrameworks>
     <IsPackable>true</IsPackable>
     <PackageDescription>Provides types for passing data between producers and consumers.
 
 Commonly Used Types:
 System.Threading.Channel
 System.Threading.Channel&lt;T&gt;</PackageDescription>
+    <AssemblyName>Suzuryg.FaceEmo.Ext.Channels</AssemblyName>
+    <PackageId>System.Threading.Channels</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
