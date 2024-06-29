@@ -16,11 +16,13 @@ System.ITimer</PackageDescription>
     <UseCompilerGeneratedDocXmlFile>false</UseCompilerGeneratedDocXmlFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <ServicingVersion>1</ServicingVersion>
+    <AssemblyName>Suzuryg.FaceEmo.Ext.TimeProvider</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup>
     <IsPartialFacadeAssembly Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsPartialFacadeAssembly>
     <OmitResources Condition="'$(IsPartialFacadeAssembly)' == 'true'">true</OmitResources>
+    <PackageId>Microsoft.Bcl.TimeProvider</PackageId>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(IsPartialFacadeAssembly)' != 'true'">
