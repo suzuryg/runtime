@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.IL">
   <PropertyGroup>
-    <TargetFrameworks>$(NetCoreAppCurrent);netcoreapp3.1;netstandard2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;netstandard2.0;net461</TargetFrameworks>
     <!-- Make sure that the DebuggableAttribute is set properly. -->
     <DebugOptimization>IMPL</DebugOptimization>
     <DebugOptimization Condition="'$(Configuration)' == 'Release'">OPT</DebugOptimization>
@@ -12,6 +12,8 @@
 
 Commonly Used Types:
 System.Runtime.CompilerServices.Unsafe</PackageDescription>
+    <AssemblyName>Suzuryg.FaceEmo.Ext.Unsafe</AssemblyName>
+    <PackageId>System.Runtime.CompilerServices.Unsafe</PackageId>
   </PropertyGroup>
   <PropertyGroup Condition="$([MSBuild]::GetTargetFrameworkIdentifier('$(TargetFramework)')) == '.NETCoreApp'">
     <ExtraMacros>#define netcoreapp</ExtraMacros>

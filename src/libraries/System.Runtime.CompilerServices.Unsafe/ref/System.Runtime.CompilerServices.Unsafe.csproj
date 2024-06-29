@@ -3,7 +3,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CLSCompliant>false</CLSCompliant>
     <Nullable>enable</Nullable>
-    <TargetFrameworks>$(NetCoreAppCurrent);netcoreapp3.1;netstandard2.1;netstandard2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;netstandard2.1;netstandard2.0;net461</TargetFrameworks>
+    <AssemblyName>Suzuryg.FaceEmo.Ext.Unsafe</AssemblyName>
+    <PackageId>System.Runtime.CompilerServices.Unsafe</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="System.Runtime.CompilerServices.Unsafe.cs" />
