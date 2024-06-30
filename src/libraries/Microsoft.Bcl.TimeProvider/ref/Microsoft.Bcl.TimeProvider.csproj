@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(NetCoreAppCurrent);netstandard2.0;$(NetFrameworkMinimum)</TargetFrameworks>
+    <TargetFrameworks>$(NetCoreAppCurrent);netstandard2.1;netstandard2.0;$(NetFrameworkMinimum)</TargetFrameworks>
     <AssemblyName>Suzuryg.FaceEmo.Ext.TimeProvider</AssemblyName>
     <PackageId>Microsoft.Bcl.TimeProvider</PackageId>
   </PropertyGroup>
@@ -14,7 +14,7 @@
   <ItemGroup>
     <Compile Include="Microsoft.Bcl.TimeProvider.Common.cs" />
   </ItemGroup>
- <ItemGroup Condition="'$(TargetFrameworkIdentifier)' != '.NETCoreApp'">
+ <ItemGroup Condition="'$(TargetFrameworkIdentifier)' != '.NETCoreApp' and '$(TargetFramework)' != 'netstandard2.1'">
    <ProjectReference Include="$(LibrariesProjectRoot)Microsoft.Bcl.AsyncInterfaces\ref\Microsoft.Bcl.AsyncInterfaces.csproj" />
  </ItemGroup>
 </Project>
